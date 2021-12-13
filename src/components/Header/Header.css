@@ -1,0 +1,189 @@
+:root {
+    --header-height: 75px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    background-color: rgb(0, 109, 109);
+    z-index: 1;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+}
+
+.logo-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    display: block;
+    height: 60px;
+    margin-left: 4px;
+}
+
+.logo-name {
+    letter-spacing: 4px;
+    font-size: 45px;
+    background-color: rgb(39, 206, 206);
+    color: transparent;
+    text-shadow: 0px 2px 3px rgb(18, 209, 145);
+    -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+    text-decoration: none;
+    font-weight: 800;
+
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item a{
+    letter-spacing: 2px;
+    color: white;
+    padding: 0 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 450;
+    font-size: 20px;
+    text-shadow: 0 0 2px #ccc;
+    transition: all ease 0.2s;
+}
+
+.nav-item a:hover {
+    color: rgb(0, 109, 109);
+    text-shadow: 0px 0px 1px #fff;
+    -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.header-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(24, 223, 213);
+    border-radius: 20px;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.header-login::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    background-color:rgb(0, 109, 109);
+    border-radius: 15px;
+    width: 0;
+    z-index: -1;
+    transition: all ease 0.3s;
+}
+
+.header-login:hover:before {
+    width: calc(100% + 2px);
+}
+
+.login-icon {
+    color: white;
+    display: block;
+    padding: 0 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.header-login a {
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+.header-user {
+    display: flex;   
+    align-items: center; 
+    cursor: pointer;
+    position: relative;
+}
+
+.header-user-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.header-user-icon {
+    font-size: 22px;
+    color: white;
+    margin: 0 0 1px 8px;
+}
+
+.header-user-option {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    min-width: 130px;
+    right: 0;
+    display: block;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #ccc;
+    z-index: 2;
+}
+
+.user-option-list {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.user-option-item {
+    display: block;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.user-option-item:hover {
+    background-color: #ddd;
+}
+
+.user-option-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.virtual-modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ccc;
+    opacity: 0;
+    z-index: 1;
+}

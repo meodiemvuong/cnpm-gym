@@ -1,0 +1,6 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: red;
+}

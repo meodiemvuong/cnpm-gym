@@ -1,0 +1,17 @@
+.avatar {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatarImg {
+    width: 100%;
+}
+
+.edit,
+.delete {
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    padding: 10px 0;
+}

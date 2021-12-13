@@ -1,0 +1,52 @@
+{
+  "name": "rubygym",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/react": "^17.0.37",
+    "axios": "^0.24.0",
+    "clsx": "^1.1.1",
+    "prop-types": "^15.7.2",
+    "query-string": "^7.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.1",
+    "react-scripts": "^2.0.5",
+    "react-timetable-events": "^1.0.2",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.0",
+    "sassy-datepicker": "^0.6.1",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "SET PORT=4000 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-react-require": "^3.1.3"
+  }
+}

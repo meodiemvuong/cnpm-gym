@@ -1,0 +1,29 @@
+.trainer-list-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 60px;
+}
+
+.trainer-heading {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.trainer-add-btn {
+    width: 80px;
+    padding: 8px 0;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+}
+

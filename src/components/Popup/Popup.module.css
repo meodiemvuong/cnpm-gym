@@ -1,0 +1,45 @@
+.popupWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupInner {
+    height: 200px;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupIcon {
+    padding: 20px;
+    color: green;
+    font-size: 40px;
+    animation: success ease 0.5s;
+}
+
+@keyframes success {
+    from {
+        font-size: 0;
+    } to {
+        font-size: 40px;
+    }
+}
+
+
+.popupMessage {
+    margin: 0;
+    color: green;
+    font-size: 40px;
+    animation: success ease 0.5s;
+}

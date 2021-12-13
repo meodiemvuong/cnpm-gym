@@ -1,0 +1,12 @@
+:root {
+  --primary-color: rgb(0, 109, 109);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fuzzy Bubbles', cursive ;
+  /* font-size: 75%; */
+}
